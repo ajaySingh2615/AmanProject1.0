@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consults Buisness - Consulting Botstrap 5 Landing Page Template</title>
+    <link rel="icon" href="images/About.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/funchy.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/innerservices.css">
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+    <link rel="stylesheet" href="css/demo1.css">
+
+
+    <script src="js/demo.js "></script>
+
+<style>
+    /* sliding tab */
+  @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:2px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  margin: 10px;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:95%;
+  max-width:700px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+
+input#one {
+    /* padding: 500px; */
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel{
+
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab{
+
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+/* end of sliding tab */
+/*  */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+
+
+.accordion-wrapper {
+  display: block;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  
+}
+
+.accordion + .title {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: linear-gradient(32deg, #34b5bf 0%, #210c59 100%);
+}
+
+.accordion ~ .title strong {
+  line-height: 24px;
+  color: white;
+}
+
+.accordion ~ .title .side-icon {
+  display: block;
+}
+
+.accordion:checked ~ .title .side-icon {
+  display: none;
+}
+
+.accordion ~ .title .down-icon {
+  display: none;
+}
+
+.accordion:checked ~ .title .down-icon {
+  display: block;
+}
+
+.accordion ~ .content {
+  display: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.accordion:checked ~ .content {
+  display: block;
+}
+/* connection tab  */
+.parent-wrapper {
+            position: relative;
+            width: 80%;
+            height: 270px;
+            margin: 40px auto 0;
+            /* background: url('images/About.jpg'); */
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -600%;
+            background: repeating-linear-gradient( 45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+            border-radius: 4px;
+            /* color: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%); */
+            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .close-btn {
+            margin: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .subscribe-wrapper {
+            position: absolute;
+            left: -30px;
+            right: -30px;
+            height: 200px;
+            padding: 30px;
+            /* background: url('https://i.imgur.com/MRjF1PL.png?1'); */
+            background-position-x: 272%;
+            background-position-y: -1px;
+            background-repeat: no-repeat;
+            background: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+            border-radius: 4px;
+            color: #333;
+            box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+        }
+        
+        .subscribe-wrapper:after {
+            position: absolute;
+            content: "";
+            right: -10px;
+            bottom: 71px;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #7149c7;
+        }
+        
+        .subscribe-wrapper h4 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            line-height: 28px;
+        }
+        
+        .subscribe-wrapper input {
+            position: absolute;
+            bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #d4d4d4;
+            padding: 10px;
+            width: 65%;
+            background: transparent;
+            transition: all .25s ease;
+        }
+        
+        .subscribe-wrapper input:focus {
+            outline: none;
+            border-bottom: 1px solid #a77cf4;
+        }
+        
+        .subscribe-wrapper .submit-btn {
+            position: absolute;
+            border-radius: 30px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            background-color: #a77cf4;
+            color: #FFF;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            right: -10px;
+            bottom: 30px;
+            cursor: pointer;
+            transition: all .25s ease;
+            box-shadow: -5px 6px 20px 0px rgba(51, 51, 51, 0.4);
+            width: 50%;
+        }
+        
+        .subscribe-wrapper .submit-btn:hover {
+            background-color: #8e62dc;
+        }
+        /* end of connection tab */
+</style>
+
+</head>
+
+<body>
+    <!-- nav area start -->
+    <nav class="navbar nav navbar-expand-lg fixed">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="h2 fw-bold">📣 Cracent<i class="h4"></i></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class> <i class="fa-solid fa-bars"></i> </span>
+            </button>
+            <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="joining_page.html">Services</a>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">blog</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav area end -->
+    <section class="header" id="home" style="background: url(images/innerservices3.png);background-size: cover;">
+        <div class="container my-2 py-2">
+          <div class="row">
+            <div class="col-lg-12 mx-auto text-left" style="margin-right: 40px;">
+              <div data-aos="zoom-in">
+                <!-- <p class="display-3 fw-bold text-white" style="text-align: left">
+                  Machine Design >>
+                </p> -->
+                  <div data-aos="flip-left" data-aos-easing="ease-out-cubic " data-aos-duration="2000 ">
+                      <!-- <p class="h5 text-success my-3">Your Throught ,Your Creation</p> --><br>
+                      <p class="h1" style="color:white">Reverse <i style="color:#ffffff"><bold>Engineering</bold></i></p><br>
+                      <hr class="hr-one m-0">
+                      <p class="lh-lg mt-6" style="color:whitesmoke"> 
+                        Do you have a prototype but not a blueprint? At Cracent, you can digitize almost anything into usable 3D CAD data using our reverse engineering services. You can modernize your manufacturing and product development processes and eliminate the need for physical inventory by digitizing your products and parts.                                </p>
+                      <a href="#">
+                          <!-- <p class="h3 text-success">We Am Largest Business Expert</p> -->
+                      </a>
+                      <a href="# ">
+                          <!-- <p class="h3 text-success"> In India</p> -->
+                      </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+    <!-- about area start -->
+    
+
+
+
+    <div class="container bootstrap snippets bootdeys"><br><br>
+        <p class="h1 " style="text-align: center;">why <i style="color:#1a73e8"><bold>choose us</bold></i></p>
+        <p class="my-3 " style="text-align: center;">
+            Our expert engineers at Cracent have years of experience in the field of engineering and they<br> understand the nuances of simulation and design optimization. We offer:
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Product Innovation</a></h4>
+                            <p class="description"style="color:whitesmoke">
+                                Our comprehensive product development capabilities, help our customers expand their global footprint and capture the rapidly growing product demand.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Technology Leadership</a></h4>
+                            <p class="description"style="color:whitesmoke">
+                                We are pioneers in adapting to the rapidly changing technology landscape and we use upgraded tools and infrastructure to solve problems.                             </p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Skilled workforce</a></h4>
+                            <p class="description"style="color:whitesmoke">
+                                Our ready-to-deploy engineers help our clients scale up globally. They have years of expertise in handling complex engineering projects.                             </p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Cost-effective</a></h4>
+                            <p class="description"style="color:whitesmoke">
+                                We believe in providing services that are value for money. Our services help you in achieving significant cost savings on overall product development. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Design to Build</a></h4>
+                            <p class="description"style="color:whitesmoke">
+                                We take pride in having strong engineering and design capabilities, as well as an extensive manufacturing eco-system that gives an edge to our customers.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
+                        <div class="content">
+                            <h4 class="title"><a href="#">Accelerated work</a></h4>
+                            <p class="description" style="color:whitesmoke">
+                                We provide system-level solutions that integrate multidisciplinary engineering streams that significantly reduce the total product development lifecycle.</p>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- sliding tab -->
+    <p class="h1 " style="text-align: center;">Our <i style="color:#1a73e8"><bold>Offering</bold></i></p>
+    <p class="my-3 " style="text-align: center;">
+        Cracent provides a holistic range of reverse engineering services to facilitate your manufacturing process.     </p>
+   <div class="warpper">
+      <input class="radio" id="one" name="group" type="radio" checked>
+      <input class="radio" id="two" name="group" type="radio">
+      <input class="radio" id="three" name="group" type="radio">
+      <input class="radio" id="four" name="group" type="radio">
+
+      <div class="tabs">
+      <label class="tab" id="one-tab" for="one">Drawing and modeling</label>
+      <label class="tab" id="two-tab" for="two">CAI and CAV</label>
+      <label class="tab" id="three-tab" for="three">Benchmarking </label>
+      <label class="tab" id="four-tab" for="four">Detailed part specifications</label>
+
+        </div>
+      <div class="panels">
+      <div class="panel" id="one-panel">
+        <div class="panel-title">Drawing and modeling</div>
+        <p>
+            Our experts create the necessary drawings and models for the project in any desired format with cutting-edge technology. 
+                    </p>
+      </div>
+      <div class="panel" id="two-panel">
+        <div class="panel-title">CAI and CAV</div>
+        <p>
+            Our team offers exclusive CAI and CAV services to clients, ensuring that your company's production process is improved.
+
+                    </p>      
+    </div>
+      <div class="panel" id="three-panel">
+        <div class="panel-title">Benchmarking </div>
+        <p> 
+            Our team track changes to a part throughout its lifecycle and ensure its maintenance, and reliability forecasting.
+                    </p>
+      </div>
+      <div class="panel" id="four-panel">
+        <div class="panel-title">Detailed part specifications</div>
+        <p> 
+            We provide  you with the part's exact specifications, letting you know exactly what you have and what you will need in the future.
+
+                    </p>
+      </div>
+      </div><br><br><br>
+    </div>
+    
+    
+
+
+    
+
+
+
+    
+
+
+
+
+    <p class="h1 " style="text-align: center;">Our <i style="color:#1a73e8"><bold>Approach</bold></i></p>
+    <p class="my-3 " style="text-align: center;">
+        Cracent helps you to translate complex physical shapes into digital models. Here’s how we do it.     </p>
+
+  <label class="accordion-wrapper">
+    <input type="checkbox" class="accordion" hidden />
+    <div class="title">
+      <strong>IDENTIFICATION</strong>
+      <svg viewBox="0 0 256 512" width="12" title="angle-right" class="side-icon" fill="white">
+        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </svg>
+      <svg viewBox="0 0 320 512" height="24" title="angle-down" class="down-icon" fill="white">
+        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+      </svg>
+    </div>
+    <div class="content">
+      <p>
+        Our team analyzes your problem and conducts an intensive research about the same. This helps us to get a clear idea about the client’s requirement.    
+    </p>
+    </div>
+  </label>
+  <label class="accordion-wrapper">
+    <input type="checkbox" class="accordion" hidden />
+    <div class="title">
+      <strong>ROADMAP</strong>
+      <svg viewBox="0 0 256 512" width="12" title="angle-right" class="side-icon" fill="white">
+        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </svg>
+      <svg viewBox="0 0 320 512" height="24" title="angle-down" class="down-icon" fill="white">
+        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+      </svg>
+    </div>
+    <div class="content">
+      <p>
+        Our experts chalk out a detailed  plan of action with the requirements in mind and find viable solutions for the problem at hand.
+</p> 
+    </div>
+  </label>
+  <label class="accordion-wrapper">
+    <input type="checkbox" class="accordion" hidden />
+    <div class="title">
+      <strong>DEPLOYMENT</strong>
+      <svg viewBox="0 0 256 512" width="12" title="angle-right" class="side-icon" fill="white">
+        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </svg>
+      <svg viewBox="0 0 320 512" height="24" title="angle-down" class="down-icon" fill="white">
+        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+      </svg>
+    </div>
+    <div class="content">
+      <p>
+        We kick off the project by ensuring that there is proper execution, training and deployment of resources to facilitate the project.
+    </p>
+    </div>
+  </label>
+  <label class="accordion-wrapper">
+    <input type="checkbox" class="accordion" hidden />
+    <div class="title">
+      <strong>MODELING</strong>
+      <svg viewBox="0 0 256 512" width="12" title="angle-right" class="side-icon" fill="white">
+        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </svg>
+      <svg viewBox="0 0 320 512" height="24" title="angle-down" class="down-icon" fill="white">
+        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+      </svg>
+    </div>
+    <div class="content">
+      <p>
+        Once accurate data is collected, we create CAD models using softwares depending upon your requirements: Siemens NX, SolidWorks, Creo or Revit.     </p>
+    </div>
+  </label>
+  <label class="accordion-wrapper">
+    <input type="checkbox" class="accordion" hidden />
+    <div class="title">
+      <strong>FINAL DEILVERY</strong>
+      <svg viewBox="0 0 256 512" width="12" title="angle-right" class="side-icon" fill="white">
+        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </svg>
+      <svg viewBox="0 0 320 512" height="24" title="angle-down" class="down-icon" fill="white">
+        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+      </svg>
+    </div>
+    <div class="content">
+      <p> 
+        After the completion of the project, our team reports to you regarding the work done and seeks your valuable feedback for any further improvements.    </p>
+    </div>
+  </label>
+
+
+
+
+    <div class="parent-wrapper"><span class="close-btn glyphicon glyphicon-remove"></span>
+        <div class="subscribe-wrapper">
+            <h4 style="color:white">REACH OUT TO US NOW!</h4>
+            <!-- <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail"> -->
+            <div class="submit-btn" style=" text-align:center">        LET's CONNECTED</div>
+        </div>
+    </div>
+
+    <!-- footer area start -->
+    <section class="footer ">
+        <div class="container mt-5 pt-5 ">
+            <div data-aos="zoom-in ">
+                <div class="row ">
+                    <div class="col-lg-5 ">
+                        <a class="navbar-brand " href="# ">
+                            <span class="h2 fw-bold text-dark ">Aman<i class="h4 ">Buisness</i></span>
+                        </a>
+                        <p class="h6 " style="color:aliceblue ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, laborum, sint! Laborum, temporibus a sit!</p>
+                        <div class="icon-one my-4 ">
+                            <i class="fa-brands m-0 ic-one fa-facebook "></i>
+                            <i class="fa-brands ic-one fa-twitter "></i>
+                            <i class="fa-brands ic-one fa-discord "></i>
+                            <i class="fa-brands ic-one fa-instagram "></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="row ">
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">All Of</p>
+                                <a href="# ">
+                                    <p class="ft-text ">Home </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">About </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Expert </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Work </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Blog </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Servises </p>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">Rate Us</p>
+                                <a href="# ">
+                                    <p class="ft-text ">Power </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Exprantion </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Tecnology </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Dreem </p>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">Country</p>
+                                <a href="# ">
+                                    <p class="ft-text ">USA </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">ATK </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">ENG. </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: aliceblue ">
+
+                    <div class="col-lg-12 text-center " style="color:aliceblue ">
+                        <p class>All Rights Reserved © 2022 Aman Bussiness </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- footer area end -->
+
+    <!---->
+    <div class="go-top active ">
+        <i class="fa-sharp fa-solid fa-arrow-up "></i>
+    </div>
+    <!---->
+    <script src="js/bootstrap.bundle.min.js " crossorigin="anonymous "></script>
+    <script src="js/jquery-3.6.1.min.js "></script>
+
+    <script src="js/funchy.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/script.js "></script>
+    <script src="js/demo.js "></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
+

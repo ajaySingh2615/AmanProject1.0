@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Consults Buisness - Consulting Botstrap 5 Landing Page Template
+    </title>
+    <link rel="icon" href="images/About.jpg" />
+    <link rel="stylesheet" href="css\all.min.css" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/funchy.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="/css/joining.css" />
+    <style>
+      .parent-wrapper {
+        position: relative;
+        width: 80%;
+        height: 270px;
+        margin: 40px auto 0;
+        /* background: url('images/About.jpg'); */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: -600%;
+        background: repeating-linear-gradient(
+            45deg,
+            #2b2b2b 0%,
+            #2b2b2b 10%,
+            #222222 0%,
+            #222222 50%
+          )
+          0 / 15px 15px;
+        border-radius: 4px;
+        /* color: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%); */
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .close-btn {
+        margin: 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .subscribe-wrapper {
+        position: absolute;
+        left: -30px;
+        right: -30px;
+        height: 200px;
+        padding: 30px;
+        /* background: url('https://i.imgur.com/MRjF1PL.png?1'); */
+        background-position-x: 272%;
+        background-position-y: -1px;
+        background-repeat: no-repeat;
+        background: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+        border-radius: 4px;
+        color: #333;
+        box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      .subscribe-wrapper:after {
+        position: absolute;
+        content: "";
+        right: -10px;
+        bottom: 71px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #7149c7;
+      }
+
+      .subscribe-wrapper h4 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        line-height: 28px;
+      }
+
+      .subscribe-wrapper input {
+        position: absolute;
+        bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #d4d4d4;
+        padding: 10px;
+        width: 65%;
+        background: transparent;
+        transition: all 0.25s ease;
+      }
+
+      .subscribe-wrapper input:focus {
+        outline: none;
+        border-bottom: 1px solid #a77cf4;
+      }
+
+      .subscribe-wrapper .submit-btn {
+        position: absolute;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #a77cf4;
+        color: #fff;
+        padding: 12px 25px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        right: -10px;
+        bottom: 30px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: -5px 6px 20px 0px rgba(51, 51, 51, 0.4);
+        width: 30%;
+      }
+
+      .subscribe-wrapper .submit-btn:hover {
+        background-color: #8e62dc;
+      } /* This pen */
+
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+      /* This pen */
+      /* body {
+            font-family: "Baloo 2", cursive;
+            font-size: 16px;
+            color: #ffffff;
+            text-rendering: optimizeLegibility;
+            font-weight: initial;
+        }
+         */
+
+      .dark {
+        background: #110f16;
+      }
+
+      .light {
+        background: #f3f5f7;
+      }
+
+      a,
+      a:hover {
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+
+      #pageHeaderTitle {
+        margin: 2rem 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+      }
+      /* Cards */
+
+      .postcard {
+        flex-wrap: wrap;
+        display: flex;
+        box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+        border-radius: 10px;
+        margin: 0 0 2rem 0;
+        overflow: hidden;
+        position: relative;
+        color: #ffffff;
+      }
+
+      .postcard.dark {
+        background-color: #18151f;
+      }
+
+      .postcard.light {
+        background-color: #e1e5ea;
+      }
+
+      .postcard .t-dark {
+        color: #18151f;
+      }
+
+      .postcard a {
+        color: inherit;
+      }
+
+      .postcard h1,
+      .postcard .h1 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .postcard .small {
+        font-size: 80%;
+      }
+
+      .postcard .postcard__title {
+        font-size: 1.75rem;
+      }
+
+      .postcard .postcard__img {
+        max-height: 180px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .postcard .postcard__img_link {
+        display: contents;
+      }
+
+      .postcard .postcard__bar {
+        width: 50px;
+        height: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #424242;
+        transition: width 0.2s ease;
+      }
+
+      .postcard .postcard__text {
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .postcard .postcard__preview-txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+        height: 100%;
+      }
+
+      .postcard .postcard__tagbox {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .postcard .postcard__tagbox .tag__item {
+        display: inline-block;
+        background: rgba(83, 83, 83, 0.4);
+        border-radius: 3px;
+        padding: 2.5px 10px;
+        margin: 0 5px 5px 0;
+        cursor: default;
+        user-select: none;
+        transition: background-color 0.3s;
+      }
+
+      .postcard .postcard__tagbox .tag__item:hover {
+        background: rgba(83, 83, 83, 0.8);
+      }
+
+      .postcard:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(-70deg, #424242, transparent 50%);
+        opacity: 1;
+        border-radius: 10px;
+      }
+
+      .postcard:hover .postcard__bar {
+        width: 100px;
+      }
+
+      @media screen and (min-width: 769px) {
+        .postcard {
+          flex-wrap: inherit;
+        }
+        .postcard .postcard__title {
+          font-size: 2rem;
+        }
+        .postcard .postcard__tagbox {
+          justify-content: start;
+        }
+        .postcard .postcard__img {
+          max-width: 300px;
+          max-height: 100%;
+          transition: transform 0.3s ease;
+        }
+        .postcard .postcard__text {
+          padding: 3rem;
+          width: 100%;
+        }
+        .postcard .media.postcard__text:before {
+          content: "";
+          position: absolute;
+          display: block;
+          background: #18151f;
+          top: -20%;
+          height: 130%;
+          width: 55px;
+        }
+        .postcard:hover .postcard__img {
+          transform: scale(1.1);
+        }
+        .postcard:nth-child(2n + 1) {
+          flex-direction: row;
+        }
+        .postcard:nth-child(2n + 0) {
+          flex-direction: row-reverse;
+        }
+        .postcard:nth-child(2n + 1) .postcard__text::before {
+          left: -12px !important;
+          transform: rotate(4deg);
+        }
+        .postcard:nth-child(2n + 0) .postcard__text::before {
+          right: -12px !important;
+          transform: rotate(-4deg);
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .postcard__text {
+          padding: 2rem 3.5rem;
+        }
+        .postcard__text:before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: -20%;
+          height: 130%;
+          width: 55px;
+        }
+        .postcard.dark .postcard__text:before {
+          background: #18151f;
+        }
+        .postcard.light .postcard__text:before {
+          background: #e1e5ea;
+        }
+      }
+      /* COLORS */
+
+      .postcard .postcard__tagbox .green.play:hover {
+        background: #79dd09;
+        color: black;
+      }
+
+      .green .postcard__title:hover {
+        color: #79dd09;
+      }
+
+      .green .postcard__bar {
+        background-color: #79dd09;
+      }
+
+      .green::before {
+        background-image: linear-gradient(
+          -30deg,
+          rgba(121, 221, 9, 0.1),
+          transparent 50%
+        );
+      }
+
+      .green:nth-child(2n)::before {
+        background-image: linear-gradient(
+          30deg,
+          rgba(121, 221, 9, 0.1),
+          transparent 50%
+        );
+      }
+
+      .postcard .postcard__tagbox .blue.play:hover {
+        background: #0076bd;
+      }
+
+      .blue .postcard__title:hover {
+        color: #0076bd;
+      }
+
+      .blue .postcard__bar {
+        background-color: #0076bd;
+      }
+
+      .blue::before {
+        background-image: linear-gradient(
+          -30deg,
+          rgba(0, 118, 189, 0.1),
+          transparent 50%
+        );
+      }
+
+      .blue:nth-child(2n)::before {
+        background-image: linear-gradient(
+          30deg,
+          rgba(0, 118, 189, 0.1),
+          transparent 50%
+        );
+      }
+
+      .postcard .postcard__tagbox .red.play:hover {
+        background: #bd150b;
+      }
+
+      .red .postcard__title:hover {
+        color: #bd150b;
+      }
+
+      .red .postcard__bar {
+        background-color: #bd150b;
+      }
+
+      .red::before {
+        background-image: linear-gradient(
+          -30deg,
+          rgba(189, 21, 11, 0.1),
+          transparent 50%
+        );
+      }
+
+      .red:nth-child(2n)::before {
+        background-image: linear-gradient(
+          30deg,
+          rgba(189, 21, 11, 0.1),
+          transparent 50%
+        );
+      }
+
+      .postcard .postcard__tagbox .yellow.play:hover {
+        background: #bdbb49;
+        color: black;
+      }
+
+      .yellow .postcard__title:hover {
+        color: #bdbb49;
+      }
+
+      .yellow .postcard__bar {
+        background-color: #bdbb49;
+      }
+
+      .yellow::before {
+        background-image: linear-gradient(
+          -30deg,
+          rgba(189, 187, 73, 0.1),
+          transparent 50%
+        );
+      }
+
+      .yellow:nth-child(2n)::before {
+        background-image: linear-gradient(
+          30deg,
+          rgba(189, 187, 73, 0.1),
+          transparent 50%
+        );
+      }
+
+      @media screen and (min-width: 769px) {
+        .green::before {
+          background-image: linear-gradient(
+            -80deg,
+            rgba(121, 221, 9, 0.1),
+            transparent 50%
+          );
+        }
+        .green:nth-child(2n)::before {
+          background-image: linear-gradient(
+            80deg,
+            rgba(121, 221, 9, 0.1),
+            transparent 50%
+          );
+        }
+        .blue::before {
+          background-image: linear-gradient(
+            -80deg,
+            rgba(0, 118, 189, 0.1),
+            transparent 50%
+          );
+        }
+        .blue:nth-child(2n)::before {
+          background-image: linear-gradient(
+            80deg,
+            rgba(0, 118, 189, 0.1),
+            transparent 50%
+          );
+        }
+        .red::before {
+          background-image: linear-gradient(
+            -80deg,
+            rgba(189, 21, 11, 0.1),
+            transparent 50%
+          );
+        }
+        .red:nth-child(2n)::before {
+          background-image: linear-gradient(
+            80deg,
+            rgba(189, 21, 11, 0.1),
+            transparent 50%
+          );
+        }
+        .yellow::before {
+          background-image: linear-gradient(
+            -80deg,
+            rgba(189, 187, 73, 0.1),
+            transparent 50%
+          );
+        }
+        .yellow:nth-child(2n)::before {
+          background-image: linear-gradient(
+            80deg,
+            rgba(189, 187, 73, 0.1),
+            transparent 50%
+          );
+        }
+      }
+      /*  */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+         */
+
+      p {
+        margin: 0px;
+      }
+      /* .container {
+            margin: 50px auto;
+        } */
+
+      .card {
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 25px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .card .fas.fa-arrow-right {
+        position: absolute;
+        bottom: -100px;
+        background-color: #1a73e8;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: gold;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 0.5s ease;
+      }
+
+      .card:hover .fas.fa-arrow-right {
+        bottom: 0px;
+        opacity: 1;
+      }
+
+      .card .fab.fa-envira,
+      .fas.fa-cut,
+      .fas.fa-people-carry {
+        font-size: 40px;
+        background-color: #0000000d;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #1a73e8;
+      }
+
+      .card .h4 {
+        font-weight: 700;
+      }
+
+      .container .content {
+        max-width: 300px;
+      }
+
+      .container .content .h-6 {
+        color: #1a73e8;
+        font-weight: 600;
+      }
+
+      .container .content .btn.btn-primary {
+        padding: 15px;
+        background-color: #1a73e8;
+        color: white;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+      }
+
+      .card:hover .fab.fa-envira,
+      .card:hover .fas.fa-cut,
+      .card:hover .fas.fa-people-carry {
+        color: gold;
+        background-color: #1a73e8;
+      }
+
+      @media (max-width: 990px) {
+        .container .content {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        body {
+          /* padding: 25px; */
+        }
+        .card {
+          width: 100%;
+        }
+        .content {
+          /* padding: 25px; */
+        }
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      :root {
+        --font1: "Heebo", sans-serif;
+        --font2: "Fira Sans Extra Condensed", sans-serif;
+        --font3: "Roboto", sans-serif;
+      }
+      body {
+        font-family: var(--font3);
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+      h2 {
+        font-weight: 900;
+      }
+      .container-fluid {
+        max-width: 1200px;
+      }
+      .card1 {
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.3s box-shadow,
+          0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+        border: 0;
+        border-radius: 1rem;
+      }
+      .card-img,
+      .card-img-top {
+        border-top-left-radius: calc(1rem - 1px);
+        border-top-right-radius: calc(1rem - 1px);
+      }
+      .card h5 {
+        overflow: hidden;
+        height: 56px;
+        font-weight: 900;
+        font-size: 1rem;
+      }
+      .card-img-top {
+        width: 100%;
+        max-height: 180px;
+        /* object-fit: contain; */
+        /* padding: 30px; */
+      }
+      .card h2 {
+        font-size: 1rem;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12),
+          0 4px 8px rgba(0, 0, 0, 0.06);
+      }
+      .label-top {
+        position: absolute;
+        background-color: #8bc34a;
+        color: #fff;
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px 5px 10px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-radius: 3px;
+        text-transform: uppercase;
+      }
+      .top-right {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 1rem;
+        font-weight: 900;
+        background: #ff5722;
+        line-height: 90px;
+        text-align: center;
+        color: white;
+      }
+      .top-right span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      @media (max-width: 768px) {
+        .card-img-top {
+          max-height: 250px;
+        }
+      }
+      .over-bg {
+        background: rgba(53, 53, 53, 0.85);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 10px;
+      }
+      .btn {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 5px 50px 5px 50px;
+      }
+      .box .btn {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 1025px) {
+        .btn {
+          padding: 5px 40px 5px 40px;
+        }
+      }
+      @media (max-width: 250px) {
+        .btn {
+          padding: 5px 30px 5px 30px;
+        }
+      }
+      .btn-warning {
+        background: none #f7810a;
+        color: #ffffff;
+        fill: #ffffff;
+        border: none;
+        text-decoration: none;
+        outline: 0;
+        box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
+        border-radius: 100px;
+      }
+      .btn-warning:hover {
+        background: none #ff962b;
+        color: #ffffff;
+        box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35);
+      }
+      .bg-success {
+        font-size: 1rem;
+        background-color: #f7810a !important;
+      }
+      .bg-danger {
+        font-size: 1rem;
+      }
+      .price-hp {
+        font-size: 1rem;
+        font-weight: 600;
+        color: darkgray;
+      }
+      .amz-hp {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: darkgray;
+      }
+      .fa-question-circle:before {
+        color: darkgray;
+      }
+      .fa-plus:before {
+        color: darkgray;
+      }
+      .box {
+        border-radius: 1rem;
+        background: #fff;
+        box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
+        transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.3s box-shadow,
+          0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+      }
+      .box-img {
+        max-width: 300px;
+      }
+      .thumb-sec {
+        max-width: 300px;
+      }
+      @media (max-width: 576px) {
+        .box-img {
+          max-width: 200px;
+        }
+        .thumb-sec {
+          max-width: 200px;
+        }
+      }
+      .inner-gallery {
+        width: 60px;
+        height: 60px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        margin: 1px;
+        display: inline-block;
+        overflow: hidden;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      @media (max-width: 370px) {
+        .box .btn {
+          padding: 5px 40px 5px 40px;
+          font-size: 1rem;
+        }
+      }
+      .disclaimer {
+        font-size: 0.9rem;
+        color: darkgray;
+      }
+      .related h3 {
+        font-weight: 900;
+      }
+      footer {
+        background: #212529;
+        height: 80px;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- nav area start -->
+    <nav class="navbar nav navbar-expand-lg fixed">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >
+          <span class="h2 fw-bold">📣 Cracent<i class="h4"></i></span>
+          </a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="joining_page.html">Services</a>
+          </li>
+          
+
+          <li class="nav-item">
+              <a class="nav-link" href="#portfolio">blog</a>
+
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav area end -->
+    <!-- header area start -->
+    <section class="header" id="home" style="background: url(images/innerservice_banner2.webp);background-size: cover;">
+      <div class="container my-2 py-2">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-left" style="margin-right: 40px;">
+            <div data-aos="zoom-in">
+              <!-- <p class="display-3 fw-bold text-white" style="text-align: left">
+                Machine Design >>
+              </p> -->
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic " data-aos-duration="2000 ">
+                    <!-- <p class="h5 text-success my-3">Your Throught ,Your Creation</p> --><br>
+                    <p class="h1" style="color:white">Our <i style="color:#ffffff"><bold>Services</bold></i></p><br>
+                    <hr class="hr-one m-0">
+                    <p class="lh-lg mt-6" style="color:whitesmoke"> Cracent is a team of innovative experts offering an extensive range of services dealing with Mechanical Engineering, IT, Mechatronics and Content Writing. We focus on solving complex, specialized and technically demanding problems and cater to the needs of wide-ranging industries. 
+                    </p>
+                    
+                    <a href="#">
+                    </a>
+                    <a href="# ">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- header area end -->
+    <!-- about area start -->
+    
+    <!-- about area end -->
+    <main><br><br><br>
+      <div data-aos="zoom-in" style="text-align: center;">
+        <!-- <p class="h5 text-success my-3">Start Your Services</p> -->
+        <p class="h1">Our Core <i style="color:#1a73e8"><bold>Services</bold></i></p>
+        <!-- <hr class="hr-one m-0 mx-auto"> -->
+        <p class="my-3"> We offer manifold services in the fields of Engineering, IT and Content Writing that are
+            <br> customisable as per your needs.</p>
+    </div>
+      <div
+        class="container-fluid bg-trasparent my-4 p-3"
+        style="position: relative">
+        <div
+          class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+          <div class="col"><h3 style="text-align: center;"><bold>Mechanical Engineering</bold></h3><br>
+            <div class="" style="border-radius: 0px;">
+              <img
+                src="images/MECHANICAL SERVICE MIDDLE PAGE.jpg " style="border-radius: 20px;"
+                class="card-img-top "
+                alt="..."/>
+              
+            </div><br> <h7 class="card-title">
+              Customized mechanical engineering services that use latest technology & sound engineering. 
+<a href="mechanical.html">              <p class="h2 fw-bold btn btn-success btn-one btn-style px-5 py-2 my-4 ">Read More</p>
+</a>
+            </h5>
+          </div>
+          <div class="col"><h3 style="text-align: center;">IT <br> Engineering</h3><br>
+            <div class="" style="border-radius: 0px;">
+              <img
+                src="images/IT SERVICES MIDDLE PAGE.jpg" style="border-radius: 20px;"
+                class="card-img-top "
+                alt="..."/>
+              
+            </div><br> <h7 class="card-title" >
+              Exquisite range of IT services to address your complex technical problems and tackle myriad priorities.              <br>
+<a href="itsolution.html">              <p class="h2 fw-bold btn btn-success btn-one btn-style px-5 py-2 my-4 ">Read More</p>
+</a>
+            </h5>
+          </div>
+          <div class="col"><h3 style="text-align: center;">Writing <br>
+            Engineering</h3><br>
+            <div class="" style="border-radius: 0px;">
+              <img
+                src="images/WRITING SOLUTIONS MIDDLE PAGE.jpg" style="border-radius: 20px;"
+                class="card-img-top "
+                alt="..."/>
+              </div><br> <h7 class="card-title">
+                SEO optimized and plagiarism-free writing solutions that cater to a variety of business and academic needs. 
+               <br> 
+<a href="writing.html">              <p class="h2 fw-bold btn btn-success btn-one btn-style px-5 py-2 my-4 ">Read More</p>
+</a>
+              </h5>
+          </div>
+
+          <div class="col"><h3 style="text-align: center;">Automation & Mechatronics</h3><br>
+            <div class="" style="border-radius: 0px;">
+              <img
+                src="images/MECHATRONICS MIDDLE PAGE.jpg" style="border-radius: 20px;"
+                class="card-img-top "
+                alt="..."/>
+              
+            </div><br> <h7 class="card-title">
+              Premier range of industrial automation and mechatronics services to transform your manufacturing business.
+             <br> 
+<a href="automation.html">              <p class="h2 fw-bold btn btn-success btn-one btn-style px-5 py-2 my-4 ">Read More</p>
+</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </main>
+
+        <div class="container">
+      <br /><br />
+      <div data-aos="zoom-in" style="text-align: center;">
+        <!-- <p class="h5 text-success my-3">Start Your Services</p> -->
+        <p class="h1">Our Special <i style="color:#1a73e8"><bold>Services</bold></i></p>
+        <!-- <hr class="hr-one m-0 mx-auto"> -->
+        <p class="my-3"> We offer manifold services in the fields of Engineering, IT and Content Writing that are
+            <br> customisable as per your needs.</p>
+    </div><br>
+      <div class="d-lg-flex">
+        <div class="d-md-flex align-items-center mb-lg-0 mb-md-5">
+          
+          <div class="col2 me-md-4 mb-md-0 mb-5">
+            <div class="card pb-4">
+              <span class=""><img src="images/Prototyping.PNG" alt=""></span>
+              <p class="h4 pt-4">Prototyping services</p>
+              <p class="p1 text-muted">
+                Boost your design and development process with our prototyping service that uses cutting-edge technology for testing and evaluation of your product.  
+
+              </p>
+              <span class="fas fa-arrow-right"></span>
+            </div>
+          </div>
+          <div class="col1 me-md-4 mb-md-0 mb-5">
+            <div class="card pb-4">
+              <span class=""><img src="images/Business Analytics.PNG" alt=""></span>
+              <p class="h4 pt-4">Bussiness Analytics Services</p>
+              <p class="p1 text-muted">
+                Our business analytics service helps you to solve complex data and analytics challenges to help your business make data-driven decisions. 
+
+              </p>
+              <span class="fas fa-arrow-right"></span>
+            </div>
+          </div>
+          <div class="col3 me-md-4 mb-md-0 mb-5">
+            <div class="card pb-4">
+              <span class=""><img src="images/Documentation .PNG" alt=""></span>
+              <p class="h4 pt-4">Documention services</p>
+              <p class="p1 text-muted">
+                Turn your business idea into reality as we help you to document your business idea and provide optimized content that help you expand your customer base. 
+
+              </p>
+              <span class="fas fa-arrow-right"></span>
+            </div>
+          </div>
+          <div class="col3 me-md-4 mb-md-0 mb-5">
+            <div class="card pb-4">
+              <span class=""><img src="images/Mechatronics (1).PNG" alt=""></span>
+              <p class="h4 pt-4">Lawn care</p>
+              <p class="p1 text-muted">
+                Turn your business idea into reality as we help you to document your business idea and provide optimized content that help you expand your customer base. 
+
+                investment when we follow this call.
+              </p>
+              <span class="fas fa-arrow-right"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="content">
+            <span class="h-6">Services</span>
+            <p class="h2 mb-4">Our Special Services</p>
+            <p class="text-muted mb-4">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. 
+            </p>
+            <p><a href="#" class="btn btn-primary">Get a Quote</a></p>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+    </div>
+
+    <!-- servise area end -->
+
+    <div class="parent-wrapper"><span class="close-btn glyphicon glyphicon-remove"></span>
+      <div class="subscribe-wrapper">
+          <h4 style="color:white">REACH OUT TO US NOW!</h4>
+          <!-- <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail"> -->
+          <div class="submit-btn" style=" text-align:center">        LET's CONNECTED</div>
+      </div>
+  </div>
+
+    <!-- footer area start -->
+    <section class="footer">
+      <div class="container mt-5 pt-5">
+        <div data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-5">
+              <a class="navbar-brand" href="# "
+                ><span class="h2 fw-bold text-dark"
+                  >Aman<i class="h4">Buisness</i></span
+                ></a
+              >
+              <p class="h6" style="color: aliceblue">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Temporibus, laborum, sint! Laborum, temporibus a sit!
+              </p>
+              <div class="icon-one my-4">
+                <i class="fa-brands m-0 ic-one fa-facebook"></i
+                ><i class="fa-brands ic-one fa-twitter"></i
+                ><i class="fa-brands ic-one fa-discord"></i
+                ><i class="fa-brands ic-one fa-instagram"></i>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="h4 mb-4" style="color: aliceblue">All Of</p>
+                  <a href="#">
+                    <p class="ft-text">Home</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">About</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Expert</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Work</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Blog</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Servises</p>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                  <p class="h4 mb-4" style="color: aliceblue">Rate Us</p>
+                  <a href="#">
+                    <p class="ft-text">Power</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Exprantion</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Tecnology</p>
+                  </a>
+                  <a href="#">
+                    <p class="mt-2 ft-text">Dreem</p>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                  <p class="h4 mb-4" style="color: aliceblue">Country</p>
+                  <a href="# ">
+                    <p class="ft-text">USA</p>
+                  </a>
+                  <a href="# ">
+                    <p class="mt-2 ft-text">ATK</p>
+                  </a>
+                  <a href="# ">
+                    <p class="mt-2 ft-text">ENG.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr style="color: aliceblue" />
+            <div class="col-lg-12 text-center" style="color: aliceblue">
+              <p class>All Rights Reserved © 2022 Aman Bussiness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer area end -->
+    <!---->
+    <div class="go-top active">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+    <!---->
+    <script src="js/bootstrap.bundle.min.js " crossorigin="anonymous "></script>
+    <script src="js/jquery-3.6.1.min.js "></script>
+    <script src="js/funchy.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/script.js "></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

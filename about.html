@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consults Buisness - Consulting Botstrap 5 Landing Page Template</title>
+    <link rel="icon" href="images/About.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/funchy.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/innerservices.css">
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+    <link rel="stylesheet" href="css/demo1.css">
+
+
+    <script src="js/demo.js "></script>
+
+<style>
+    /* hero image with wave flow */
+  :root {
+  --color: #4973ff;
+}
+/* 
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-sherif;
+  margin: 0;
+  padding: 0;
+} */
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  position: relative;
+  background: #333333;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 4.5rem;
+  margin: 0 0 10px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
+/* ========================= */
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-color: var(--color);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+  content: '';
+  position: absolute;
+  width: 300vw;
+  height: 300vw;
+  top: -65vw;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.waves::before {
+  border-radius: 44%;
+  background: rgba(51, 51, 51, 1);
+  animation: waves 8s linear infinite;
+}
+
+.waves::after {
+  border-radius: 44%;
+  background: rgba(51, 51, 51, 0.5);
+  animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+/* End of hero image with wave flow */
+
+
+/* .... */
+
+/*PEN STYLES*/
+
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card a {
+  color: inherit;
+}
+.blog-card a:hover {
+  color: #5ad67d;
+}
+.blog-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "";
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 840px) {
+  .blog-card {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+/* .... */
+/* Reset. */
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+    .panel .content67 {
+        position: absolute;
+        width: 100vw;
+        min-height: 45vw;
+        color: #FFF;
+    }
+
+    .panel .description67 {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+}
+
+    .bottom .description67 {
+        right: 5%;
+    }
+
+.top {
+    background-color: rgb(77, 69, 173);
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description67 {
+        left: 5%;
+    }
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content67 {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+
+/* .... */
+.parent-wrapper {
+            position: relative;
+            width: 80%;
+            height: 270px;
+            margin: 40px auto 0;
+            /* background: url('images/About.jpg'); */
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -600%;
+            background: repeating-linear-gradient( 45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+            border-radius: 4px;
+            /* color: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%); */
+            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .close-btn {
+            margin: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .subscribe-wrapper {
+            position: absolute;
+            left: -30px;
+            right: -30px;
+            height: 200px;
+            padding: 30px;
+            /* background: url('https://i.imgur.com/MRjF1PL.png?1'); */
+            background-position-x: 272%;
+            background-position-y: -1px;
+            background-repeat: no-repeat;
+            background: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+            border-radius: 4px;
+            color: #333;
+            box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+        }
+        
+        .subscribe-wrapper:after {
+            position: absolute;
+            content: "";
+            right: -10px;
+            bottom: 71px;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #7149c7;
+        }
+        
+        .subscribe-wrapper h4 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            line-height: 28px;
+        }
+        
+        .subscribe-wrapper input {
+            position: absolute;
+            bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #d4d4d4;
+            padding: 10px;
+            width: 65%;
+            background: transparent;
+            transition: all .25s ease;
+        }
+        
+        .subscribe-wrapper input:focus {
+            outline: none;
+            border-bottom: 1px solid #a77cf4;
+        }
+        
+        .subscribe-wrapper .submit-btn {
+            position: absolute;
+            border-radius: 30px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            background-color: #a77cf4;
+            color: #FFF;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            right: -10px;
+            bottom: 30px;
+            cursor: pointer;
+            transition: all .25s ease;
+            box-shadow: -5px 6px 20px 0px rgba(51, 51, 51, 0.4);
+            width: 50%;
+        }
+        
+        .subscribe-wrapper .submit-btn:hover {
+            background-color: #8e62dc;
+        }
+        /* end of connection tab */
+
+        /* ... */
+        @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400';
+/* colors */
+/* tab setting */
+/* breakpoints */
+/* selectors relative to radio inputs */
+/* html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #efefef;
+  color: #333;
+  font-family: "Raleway";
+  height: 100%;
+}
+body h1 {
+  text-align: center;
+  color: #428BFF;
+  font-weight: 300;
+  padding: 40px 0 20px 0;
+  margin: 0;
+} */
+
+.tabs {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  background: white;
+  padding: 50px;
+  padding-bottom: 80px;
+  width: 70%;
+  height: 250px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  min-width: 240px;
+}
+.tabs input[name=tab-control] {
+  display: none;
+}
+.tabs .content section h2,
+.tabs ul li label {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 18px;
+  color: #428BFF;
+}
+.tabs ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.tabs ul li {
+  box-sizing: border-box;
+  flex: 1;
+  width: 25%;
+  padding: 0 10px;
+  text-align: center;
+}
+.tabs ul li label {
+  transition: all 0.3s ease-in-out;
+  color: #929daf;
+  padding: 5px auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tabs ul li label br {
+  display: none;
+}
+.tabs ul li label svg {
+  fill: #929daf;
+  height: 1.2em;
+  vertical-align: bottom;
+  margin-right: 0.2em;
+  transition: all 0.2s ease-in-out;
+}
+.tabs ul li label:hover, .tabs ul li label:focus, .tabs ul li label:active {
+  outline: 0;
+  color: #bec5cf;
+}
+.tabs ul li label:hover svg, .tabs ul li label:focus svg, .tabs ul li label:active svg {
+  fill: #bec5cf;
+}
+.tabs .slider {
+  position: relative;
+  width: 25%;
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+.tabs .slider .indicator {
+  position: relative;
+  width: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background: #428BFF;
+  border-radius: 1px;
+}
+.tabs .content {
+  margin-top: 30px;
+}
+.tabs .content section {
+  display: none;
+  -webkit-animation-name: content;
+          animation-name: content;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  line-height: 1.4;
+}
+.tabs .content section h2 {
+  color: #428BFF;
+  display: none;
+}
+.tabs .content section h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #428BFF;
+  margin-top: 5px;
+  left: 1px;
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+  cursor: default;
+  color: #428BFF;
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label svg {
+  fill: #428BFF;
+}
+@media (max-width: 600px) {
+  .tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider {
+  transform: translateX(0%);
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+  cursor: default;
+  color: #428BFF;
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg {
+  fill: #428BFF;
+}
+@media (max-width: 600px) {
+  .tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider {
+  transform: translateX(100%);
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > section:nth-child(2) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+  cursor: default;
+  color: #428BFF;
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label svg {
+  fill: #428BFF;
+}
+@media (max-width: 600px) {
+  .tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .slider {
+  transform: translateX(200%);
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+  cursor: default;
+  color: #428BFF;
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label svg {
+  fill: #428BFF;
+}
+@media (max-width: 600px) {
+  .tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .slider {
+  transform: translateX(300%);
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
+  display: block;
+}
+@-webkit-keyframes content {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes content {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 1000px) {
+  .tabs ul li label {
+    white-space: initial;
+  }
+  .tabs ul li label br {
+    display: initial;
+  }
+  .tabs ul li label svg {
+    height: 1.5em;
+  }
+}
+@media (max-width: 600px) {
+  .tabs ul li label {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .tabs ul li label span {
+    display: none;
+  }
+  .tabs .slider {
+    display: none;
+  }
+  .tabs .content {
+    margin-top: 20px;
+  }
+  .tabs .content section h2 {
+    display: block;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+    <!-- nav area start -->
+    <nav class="navbar nav navbar-expand-lg fixed">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <span class="h2 fw-bold">📣 Cracent<i class="h4"></i></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class> <i class="fa-solid fa-bars"></i> </span>
+            </button>
+            <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="joining_page.html">Services</a>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">blog</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav area end -->
+    <section class="header" id="home" style="background: url(images/innerservices3.png);background-size: cover;">
+        <div class="container my-2 py-2">
+          <div class="row">
+            <div class="col-lg-12 mx-auto text-left" style="margin-right: 40px;">
+              <div data-aos="zoom-in">
+                
+                  <div data-aos="flip-left" data-aos-easing="ease-out-cubic " data-aos-duration="2000 ">
+                      <p class="h1 " style="color:white ">About <i style="color:#ffffff"><bold></bold></i></p><br>
+                      <hr class="hr-one m-0">
+                      <p class="lh-lg mt-6" style="color:whitesmoke"> Cracent is a one-of-a-kind umbrella company that provides curated services. Be it machine design, product development, design optimization or writing solution, we have got technicians to deal with all your problems. We never lose sight of what brought us here: listening to our clients' needs and challenges and providing effective strategies and solid execution to help them get the job done right.</p>
+                      <a href="#">
+                      </a>
+                      <a href="# ">
+                      </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+  
+
+    
+    <!-- hero section -->
+    <!-- <section class="hero">
+        <div class="content">
+          <h2>About</h2>
+          <p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non</p>
+          </div>
+        <div class="waves"></div>
+      </section> -->
+      <!-- end of hero section  -->
+
+<!-- our vision & mission section  -->
+<br><br>
+      <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(images/vision.jpg)"></div>
+          <!-- <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Aug. 24, 2015</li>
+            <li class="tags">
+              <ul> -->
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Our Vision</h1>
+          <!-- <h2>Opening a door to the future</h2> -->
+          <p> A lot of startups fail despite a great underlying idea because their owners lack a concrete plan of action and market acumen. Our vision is to be your helping hand so that you establish yourself as a brand name. </p>
+          <p class="read-more">
+            <!-- <a href="#">Read More</a> -->
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(images/mission2.webp)"></div>
+          <!-- <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul> -->
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Our Mission </h1>
+          <!-- <h2>Java is not the same as JavaScript</h2> -->
+          <p> We work with a mission to provide breakthrough quality solutions to our valued customers that can fuel their ideas and empower them with the right tools and resources to take their business to new heights. </p>
+          <p class="read-more">
+            <!-- <a href="#">Read More</a> -->
+          </p>
+        </div>
+      </div>
+ <!-- end of vision & mission card  -->
+ <div class="container bootstrap snippets bootdeys"><br><br>
+  <p class="h1 " style="text-align: center;">Our <i style="color:#1a73e8"><bold>Objective</bold></i></p>
+  <p class="my-3 " style="text-align: center;">Cracent has been founded with a view to attain strong objectives that can create a social difference. 
+  </p>
+  <br>
+  <div data-aos="flip-left">
+  <div class="row">
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Blue Card</a></h4> -->
+                      <p class="description"style="color:whitesmoke">We aim to play an instrumental role in bridging the gap between our clients who have a startup idea and the vendors in the industrial area to facilitate collaboration between them. </p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Green Card</a></h4> -->
+                      <p class="description"style="color:whitesmoke">
+                        Our work with an aim to build a good rapport between the clients and the employees/vendors to pave way for an integrated personal assistance for the clients.                        </p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Yellow Card</a></h4> -->
+                      <p class="description"style="color:whitesmoke">We seek to collaborate with local industry vendors (macro and small enterprises) to serve our clients. This will make the work more steady and rejuvenate the business with ideas.</p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Brown Card</a></h4> -->
+                      <p class="description"style="color:whitesmoke">
+                        We seek to collaborate with local industry vendors (macro and small enterprises) in order to serve our clients. This will make the work more steady and rejuvenate the business with new ideas.                       </p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Purple Card</a></h4> -->
+                      <p class="description"style="color:whitesmoke">Our business model is primarily based on building and developing a problem solving methodology to address our client’s issues by employing cutting-edge technological solutions. </p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
+                  <div class="content">
+                      <!-- <h6 class="category">Best cards</h6>
+                      <h4 class="title"><a href="#">Orange Card</a></h4> -->
+                      <p class="description" style="color:whitesmoke">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                  </div>
+              </div>
+              <!-- end card -->
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+ 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var parent = document.querySelector('.splitview'),
+        topPanel = parent.querySelector('.top'),
+        handle = parent.querySelector('.handle'),
+        skewHack = 0,
+        delta = 0;
+
+    // If the parent has .skewed class, set the skewHack var.
+    if (parent.className.indexOf('skewed') != -1) {
+        skewHack = 1000;
+    }
+
+    parent.addEventListener('mousemove', function(event) {
+        // Get the delta between the mouse position and center point.
+        delta = (event.clientX - window.innerWidth / 2) * 0.5;
+
+        // Move the handle.
+        handle.style.left = event.clientX + delta + 'px';
+
+        // Adjust the top panel width.
+        topPanel.style.width = event.clientX + skewHack + delta + 'px';
+    });
+});
+</script><br><br>
+<p class="h1 " style="text-align: center;">Our <i style="color:#1a73e8"><bold>Commitment</bold></i></p>
+    <p class="my-3 " style="text-align: center;"> We bring our clients' visions to life through cutting-edge solutions. Our dedication to the client places them at the centre of everything <br> establishes us as a strategic partner. We go above and beyond with a bold promise that Cracent will always deliver.<br> We stay true to our core values that make us what we are today.</p>
+<div class="tabs">
+  
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">  
+  <input type="radio" id="tab4" name="tab-control">
+  <ul>
+    <li title="Features"><label for="tab1" role="button"><svg viewBox="0 0 24 24"><path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/>
+</svg><br><span>Ideate & innovate</span></label></li>
+    <li title="Delivery Contents"><label for="tab2" role="button">
+      <svg viewBox="0 0 24 24">
+        <path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/></svg><br><span>We are what we do!</span></label></li>
+    <li title="Shipping"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+      <path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/></svg><br><span>Your vision, our duty</span></label></li>    <li title="Returns"><label for="tab4" role="button"><svg viewBox="0 0 24 24">
+  <path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/></svg><br><span>Empower & enthuse</span></label></li>
+  </ul>
+  
+  <div class="slider"><div class="indicator"></div></div>
+  <div class="content">
+    <section>
+      <h2>Ideate & innovate</h2>We strongly believe that there is no end to innovation. We strive to create new innovation through state-of-the-art technology.
+    </section>
+        <section>
+          <h2>We are what we do!</h2>
+          We with an aim to win our customers’ trust. Hence, we work upon strong foundational values that we are proud of. 
+        </section>
+        <section>
+          <h2>Your vision, our duty</h2>
+          We do not compromise with quality and provide the best-in-class solutions and tools so that your business prospers.          </section>
+    <section>
+          <h2>Empower & enthuse</h2>
+          We empower our customers with the right tools and resources to support so that they make new strides in their business.   </section>
+  </div>
+</div>
+<br>
+<!-- connection card  -->
+    <div class="parent-wrapper"><span class="close-btn glyphicon glyphicon-remove"></span>
+        <div class="subscribe-wrapper">
+            <h4 style="color:white">REACH OUT TO US NOW!</h4>
+            <!-- <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail"> -->
+            <div class="submit-btn" style=" text-align:center">        LET's CONNECTED</div>
+        </div>
+    </div>
+<!-- end of connection card  -->
+
+
+    <!-- footer area start -->
+    <section class="footer ">
+        <div class="container mt-5 pt-5 ">
+            <div data-aos="zoom-in ">
+                <div class="row ">
+                    <div class="col-lg-5 ">
+                        <a class="navbar-brand " href="# ">
+                            <span class="h2 fw-bold text-dark ">Aman<i class="h4 ">Buisness</i></span>
+                        </a>
+                        <p class="h6 " style="color:aliceblue ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, laborum, sint! Laborum, temporibus a sit!</p>
+                        <div class="icon-one my-4 ">
+                            <i class="fa-brands m-0 ic-one fa-facebook "></i>
+                            <i class="fa-brands ic-one fa-twitter "></i>
+                            <i class="fa-brands ic-one fa-discord "></i>
+                            <i class="fa-brands ic-one fa-instagram "></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="row ">
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">All Of</p>
+                                <a href="# ">
+                                    <p class="ft-text ">Home </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">About </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Expert </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Work </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Blog </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Servises </p>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">Rate Us</p>
+                                <a href="# ">
+                                    <p class="ft-text ">Power </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Exprantion </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Tecnology </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">Dreem </p>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <p class="h4 mb-4 " style="color: aliceblue; ">Country</p>
+                                <a href="# ">
+                                    <p class="ft-text ">USA </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">ATK </p>
+                                </a>
+                                <a href="# ">
+                                    <p class="mt-2 ft-text ">ENG. </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: aliceblue ">
+
+                    <div class="col-lg-12 text-center " style="color:aliceblue ">
+                        <p class>All Rights Reserved © 2022 Aman Bussiness </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- footer area end -->
+
+    <!---->
+    <div class="go-top active ">
+        <i class="fa-sharp fa-solid fa-arrow-up "></i>
+    </div>
+    <!---->
+    <script src="js/bootstrap.bundle.min.js " crossorigin="anonymous "></script>
+    <script src="js/jquery-3.6.1.min.js "></script>
+
+    <script src="js/funchy.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/script.js "></script>
+    <script src="js/demo.js "></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
+
+</html>
